@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | ProcurePay Solutions</title>
+    <link rel="icon" href="/images/tfsh_logo.png" type="image/png" sizes="16x16">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2a5bd7;
+            --primary-dark: #1e4bc2;
+            --primary-light: #e6edfd;
+            --white: #ffffff;
+            --text-color: #333;
+            --border-color: #e0e0e0;
+            --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            --transition: all 0.3s ease;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            background-color: #f8f9fa;
+            line-height: 1.6;
+            color: var(--text-color);
+        }
+        
+        .internal-banner {
+            background-color: #ffcc00;
+            color: #333;
+            text-align: center;
+            padding: 0.5em;
+            font-size: 0.9em;
+            font-weight: 500;
+        }
+        
+        header {
+            background-color: var(--white);
+            padding: 1em 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-weight: 700;
+            font-size: 1.4em;
+            letter-spacing: -0.5px;
+            margin: 0;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        
+        .logo span {
+            color: var(--primary-dark);
+        }
+        
+        .header-actions {
+            display: flex;
+            gap: 1em;
+            align-items: center;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 0.6em 1.5em;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: var(--transition);
+            font-size: 0.9em;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .btn:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(42, 91, 215, 0.2);
+        }
+        
+        .btn-outline {
+            background-color: transparent;
+            border: 1px solid var(--primary-color);
+            color: var(--primary-color);
+        }
+        
+        .btn-outline:hover {
+            background-color: var(--primary-light);
+        }
+        
+        .privacy-container {
+            max-width: 1000px;
+            margin: 3em auto;
+            padding: 0 2em;
+            background-color: var(--white);
+            border-radius: 8px;
+            box-shadow: var(--box-shadow);
+            border: 1px solid var(--border-color);
+            padding: 2em 3em;
+        }
+        
+        .privacy-header {
+            text-align: center;
+            margin-bottom: 2em;
+            padding-bottom: 1em;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .privacy-header h1 {
+            font-size: 2em;
+            color: var(--primary-dark);
+            margin-bottom: 0.5em;
+        }
+        
+        .privacy-header p {
+            color: #666;
+            font-size: 0.95em;
+        }
+        
+        .privacy-content h2 {
+            font-size: 1.4em;
+            color: var(--primary-dark);
+            margin-top: 2em;
+            margin-bottom: 1em;
+        }
+        
+        .privacy-content h3 {
+            font-size: 1.1em;
+            color: var(--primary-color);
+            margin-top: 1.5em;
+            margin-bottom: 0.5em;
+        }
+        
+        .privacy-content p {
+            margin-bottom: 1em;
+            color: #555;
+        }
+        
+        .privacy-content ul {
+            margin-bottom: 1.5em;
+            padding-left: 1.5em;
+        }
+        
+        .privacy-content li {
+            margin-bottom: 0.5em;
+            color: #555;
+        }
+        
+        .highlight-box {
+            background-color: var(--primary-light);
+            border-left: 4px solid var(--primary-color);
+            padding: 1em;
+            margin: 1.5em 0;
+            border-radius: 0 4px 4px 0;
+        }
+        
+        footer {
+            background-color: var(--white);
+            padding: 2em 0;
+            border-top: 1px solid var(--border-color);
+        }
+        
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.5em;
+        }
+        
+        .footer-actions {
+            display: flex;
+            gap: 1em;
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            font-size: 0.85em;
+            color: #666;
+            border-top: 1px solid var(--border-color);
+            padding-top: 1.5em;
+            margin-top: 1.5em;
+            width: 100%;
+        }
+        
+        .internal-notice {
+            font-size: 0.8em;
+            color: #666;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+                gap: 1em;
+                padding-bottom: 1em;
+            }
+            
+            .header-actions {
+                width: 100%;
+                justify-content: center;
+            }
+            
+            .privacy-container {
+                padding: 1.5em;
+            }
+            
+            .footer-actions {
+                flex-direction: column;
+                width: 100%;
+            }
+            
+            .footer-actions .btn {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="internal-banner">
+        INTERNAL USE ONLY - ProcurePay Solutions Proprietary System
+    </div>
+    
+    <header>
+        <div class="header-container">
+            <a href="/" class="logo">Procure<span>Pay</span></a>
+            <div class="header-actions">
+                <a href="#contact" class="btn btn-outline">Contact Support</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="privacy-container">
+        <div class="privacy-header">
+            <h1>Privacy Policy</h1>
+            <p>Last Updated: <?= date('F j, Y') ?></p>
+        </div>
+        
+        <div class="privacy-content">
+            <p>This Privacy Policy describes how ProcurePay Solutions ("we", "our", or "us") collects, uses, and discloses your information when you use our Finance Purchase Order system and related services ("Services").</p>
+            
+            <div class="highlight-box">
+                <p>By using our Services, you agree to the collection and use of information in accordance with this policy. We are committed to protecting your privacy and handling your data responsibly.</p>
+            </div>
+            
+            <h2>1. Information We Collect</h2>
+            <h3>1.1 Account Information</h3>
+            <p>When you access our Services through your organization's account, we may collect:</p>
+            <ul>
+                <li>Your name and contact information provided by your organization</li>
+                <li>Your role and department within your organization</li>
+                <li>System usage data and access logs</li>
+            </ul>
+            
+            <h3>1.2 Authentication Information</h3>
+            <p>Our system uses Single Sign-On (SSO) for authentication. We do not store your login credentials. Authentication is handled by your organization's identity provider, and we only receive verification of your authenticated status.</p>
+            
+            <div class="highlight-box">
+                <p><strong>Important:</strong> Any data or credentials used to verify your identity are managed through SSO and are not stored in our system. We do not have access to or store your password or other sensitive authentication information.</p>
+            </div>
+            
+            <h3>1.3 Financial and Transaction Data</h3>
+            <p>In the course of providing our Services, we process:</p>
+            <ul>
+                <li>Purchase order information</li>
+                <li>Vendor details</li>
+                <li>Payment verification data</li>
+                <li>Transaction records</li>
+            </ul>
+            
+            <h2>2. How We Use Your Information</h2>
+            <p>We use the information we collect to:</p>
+            <ul>
+                <li>Provide and maintain our Services</li>
+                <li>Authenticate and authorize access to the system</li>
+                <li>Process financial transactions and procurement requests</li>
+                <li>Improve and optimize our Services</li>
+                <li>Comply with legal obligations</li>
+            </ul>
+            
+            <h2>3. Data Sharing and Disclosure</h2>
+            <h3>3.1 With Your Organization</h3>
+            <p>We share account activity and transaction data with authorized personnel within your organization as necessary for the operation of the Services.</p>
+            
+            <h3>3.2 Service Providers</h3>
+            <p>We may engage third-party companies to facilitate our Services, provide services on our behalf, or assist in analyzing how our Services are used. These third parties have access to your information only to perform these tasks and are obligated not to disclose or use it for any other purpose.</p>
+            
+            <h3>3.3 Legal Requirements</h3>
+            <p>We may disclose your information if required to do so by law or in response to valid requests by public authorities.</p>
+            
+            <h2>4. Data Security</h2>
+            <p>We implement appropriate technical and organizational measures to protect the security of your information, including:</p>
+            <ul>
+                <li>Encryption of data in transit and at rest</li>
+                <li>Regular security audits</li>
+                <li>Access controls and authentication mechanisms</li>
+                <li>Employee training on data protection</li>
+            </ul>
+            
+            <div class="highlight-box">
+                <p>While we strive to protect your information, no method of transmission over the Internet or method of electronic storage is 100% secure. We cannot guarantee absolute security but we commit to implementing industry-standard protections.</p>
+            </div>
+            
+            <h2>5. Data Retention</h2>
+            <p>We retain your information only for as long as is necessary for the purposes set out in this Privacy Policy and to comply with our legal obligations.</p>
+            
+            <h2>6. Your Rights</h2>
+            <p>Depending on your jurisdiction, you may have certain rights regarding your personal information, including:</p>
+            <ul>
+                <li>The right to access and receive a copy of your information</li>
+                <li>The right to request correction of inaccurate information</li>
+                <li>The right to request deletion of your information</li>
+                <li>The right to object to or restrict processing</li>
+            </ul>
+            
+            <p>To exercise these rights, please contact your organization's system administrator or our support team.</p>
+            
+            <h2>7. Changes to This Privacy Policy</h2>
+            <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last Updated" date.</p>
+            
+            <h2>8. Contact Us</h2>
+            <p>If you have any questions about this Privacy Policy, please contact us at:</p>
+            <p>ProcurePay Solutions<br>
+            Data Protection Officer<br>
+            privacy@procurepaysolutions.com<br>
+            +1 (778) 561-4927</p>
+        </div>
+    </main>
+
+    <footer id="contact">
+        <div class="footer-container">
+            <div class="footer-actions">
+                <a href="mailto:support@procurepaysolutions.com" class="btn btn-outline">Email Support</a>
+                <a href="tel:+17785614927" class="btn btn-outline">Call Support</a>
+            </div>
+            
+            <div class="internal-notice">
+                <p>This system is for internal use by ProcurePay Solutions authorized personnel only. Unauthorized access is strictly prohibited.</p>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <?= date('Y') ?> ProcurePay Solutions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

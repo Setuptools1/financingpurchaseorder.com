@@ -356,7 +356,7 @@ if (!isset($_SESSION['submission_attempts'])) {
         <div class="footer-links">
             <a href="/privacy" target="_blank">Privacy</a>
             <a href="/terms" target="_blank">Terms</a>
-            <a href="/contact" target="_blank">Support</a>
+            <a href="/" target="_blank">Support</a>
         </div>
     </footer>
 

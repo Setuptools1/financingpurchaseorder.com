@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Purchase Order | ProcurePay Solutions</title>
+    <link rel="icon" href="/images/tfsh_logo.png" type="image/png" sizes="16x16">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2a5bd7;
+            --primary-dark: #1e4bc2;
+            --primary-light: #e6edfd;
+            --white: #ffffff;
+            --text-color: #333;
+            --border-color: #e0e0e0;
+            --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            --transition: all 0.3s ease;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            background-color: #f8f9fa;
+            line-height: 1.6;
+            color: var(--text-color);
+        }
+        
+        header {
+            background-color: var(--white);
+            padding: 1.5em 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-weight: 700;
+            font-size: 1.4em;
+            letter-spacing: -0.5px;
+            margin: 0;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        
+        .logo span {
+            color: var(--primary-dark);
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, var(--primary-light) 0%, var(--white) 100%);
+            padding: 4em 2em;
+            text-align: center;
+        }
+        
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .hero h1 {
+            font-size: 2.5em;
+            font-weight: 700;
+            margin-bottom: 0.5em;
+            color: var(--primary-dark);
+        }
+        
+        .hero p {
+            font-size: 1.1em;
+            color: #555;
+            margin-bottom: 2em;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 0.8em 1.8em;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: var(--transition);
+        }
+        
+        .btn:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(42, 91, 215, 0.2);
+        }
+        
+        .features {
+            max-width: 1200px;
+            margin: 4em auto;
+            padding: 0 2em;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 3em;
+        }
+        
+        .section-title h2 {
+            font-size: 1.8em;
+            color: var(--primary-dark);
+            margin-bottom: 0.5em;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2em;
+        }
+        
+        .feature-card {
+            background-color: var(--white);
+            border-radius: 8px;
+            padding: 2em;
+            box-shadow: var(--box-shadow);
+            transition: var(--transition);
+            border: 1px solid var(--border-color);
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+        }
+        
+        .feature-icon {
+            background-color: var(--primary-light);
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5em;
+        }
+        
+        .feature-icon svg {
+            width: 30px;
+            height: 30px;
+            fill: var(--primary-color);
+        }
+        
+        .feature-card h3 {
+            font-size: 1.2em;
+            margin-bottom: 0.8em;
+            color: var(--primary-dark);
+        }
+        
+        .feature-card p {
+            color: #666;
+            font-size: 0.95em;
+            margin: 0;
+        }
+        
+        footer {
+            background-color: var(--white);
+            padding: 2em 0;
+            border-top: 1px solid var(--border-color);
+            text-align: center;
+        }
+        
+        .footer-bottom {
+            font-size: 0.85em;
+            color: #666;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2em;
+            }
+            
+            .hero p {
+                font-size: 1em;
+            }
+            
+            .btn-container {
+                display: flex;
+                flex-direction: column;
+                gap: 1em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <a href="/" class="logo">Procure<span>Pay</span></a>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Finance Purchase Order Solutions</h1>
+            <p>Streamline your procurement process with secure, efficient payment verification and management.</p>
+            <div class="btn-container">
+                <a href="/login" class="btn">Verify Payment</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="section-title">
+            <h2>Secure Purchase Order Management</h2>
+            <p>Our platform provides end-to-end solutions for finance teams to manage and verify purchase orders with confidence.</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M12,1L3,5V11C3,16.55 6.84,21.74 12,23C17.16,21.74 21,16.55 21,11V5L12,1M12,7C13.4,7 14.8,8.1 14.8,9.5V11C15.4,11 16,11.6 16,12.2V15.7C16,16.4 15.4,17 14.8,17H9.2C8.6,17 8,16.4 8,15.7V12.2C8,11.6 8.6,11 9.2,11V9.5C9.2,8.1 10.6,7 12,7M12,8.2C11.2,8.2 10.5,8.7 10.5,9.5V11H13.5V9.5C13.5,8.7 12.8,8.2 12,8.2Z"/>
+                    </svg>
+                </div>
+                <h3>Bank-Grade Security</h3>
+                <p>All transactions are protected with enterprise-level encryption and multi-factor authentication.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M13,9H18.5L13,3.5V9M6,2H14L20,8V20A2,2 0 0,1 18,22H6C4.89,22 4,21.1 4,20V4C4,2.89 4.89,2 6,2M11,15V12H9V15H6V17H9V20H11V17H14V15H11Z"/>
+                    </svg>
+                </div>
+                <h3>Automated Verification</h3>
+                <p>Our system automatically matches purchase orders with invoices and payments.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M12,3L2,12H5V20H19V12H22L12,3M12,7.7C14.1,7.7 15.8,9.4 15.8,11.5C15.8,14.5 12,18 12,18C12,18 8.2,14.5 8.2,11.5C8.2,9.4 9.9,7.7 12,7.7M12,10A1.5,1.5 0 0,0 10.5,11.5A1.5,1.5 0 0,0 12,13A1.5,1.5 0 0,0 13.5,11.5A1.5,1.5 0 0,0 12,10Z"/>
+                    </svg>
+                </div>
+                <h3>Real-Time Tracking</h3>
+                <p>Monitor the status of all your purchase orders and payments in real-time.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-bottom">
+            <p>&copy; <?= date('Y') ?> ProcurePay Solutions. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
